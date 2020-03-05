@@ -73,7 +73,6 @@ class Indent extends Field
      */
     protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute)
     {
-        dump($request,$requestAttribute);
         $this->child()->fill($request, $model);
     }
 
